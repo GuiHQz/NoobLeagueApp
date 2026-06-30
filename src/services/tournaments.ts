@@ -14,4 +14,4 @@ export type Tournament = {
 
 export async function getAllTournaments() {
   return apiGet<Tournament[]>('/tournament-api/get-all')
-}
+} 
