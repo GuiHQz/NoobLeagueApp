@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import {
   getTournamentById,
   type Tournament,
-  type TournamentDetailsResponse,
   type TournamentUser,
 } from '../../services/tournaments'
 import './tournament-details.css'
