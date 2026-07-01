@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getAllTournaments, type Tournament } from '../../services/tournaments'
 import './tournaments.css'
@@ -91,11 +92,13 @@ export function TournamentsPage() {
           <div className="tournaments-list">
             {tournaments.map((tournament, index) => {
               const tournamentName = tournament.name || `Torneio ${index + 1}`
+              const tournamentId = tournament.id || `${index}`
 
               return (
-                <article
+                <Link
                   key={tournament.id ?? `${tournamentName}-${index}`}
-                  className="tournament-card"
+                  to={`/torneio/${tournamentId}`}
+                  className="tournament-card tournament-card--link"
                 >
                   <div className="tournament-card__header">
                     <span>#{index + 1}</span>
@@ -105,10 +108,6 @@ export function TournamentsPage() {
                   <h2>{tournamentName}</h2>
 
                   <dl className="tournament-meta">
-                    <div>
-                      <dt>ID</dt>
-                      <dd>{tournament.id || 'Nao informado'}</dd>
-                    </div>
                     <div>
                       <dt>Status</dt>
                       <dd>{tournament.status ?? 'Nao informado'}</dd>
@@ -124,7 +123,7 @@ export function TournamentsPage() {
                   </dl>
 
                   <p>Status da API: {tournament.statusDescription || 'Nao informado'}</p>
-                </article>
+                </Link>
               )
             })}
           </div>

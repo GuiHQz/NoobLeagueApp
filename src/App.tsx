@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import noobLeagueLogo from './assets/noob-league-logo.png'
 import { HomePage } from './pages/home'
+import { TournamentDetailsPage } from './pages/tournament-details'
 import { TournamentsPage } from './pages/tournaments'
 import './App.css'
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/torneios" element={<TournamentsPage />} />
+        <Route path="/torneio/:id" element={<TournamentDetailsPage />} />
         <Route path="/campeonatos" element={<TournamentsPage />} />
       </Routes>
     </div>
