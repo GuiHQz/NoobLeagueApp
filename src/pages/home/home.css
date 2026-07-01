@@ -1,5 +1,7 @@
 .home-page {
   color: #f3f7f6;
+  background:
+    linear-gradient(180deg, rgba(4, 7, 7, 0.98), rgba(8, 12, 12, 1) 24rem, #e7ecec 24rem, #e7ecec 100%);
 }
 
 .hero-section {
@@ -50,17 +52,10 @@
   gap: 0.9rem;
 }
 
-.brand-badge {
-  display: grid;
-  place-items: center;
-  width: 3rem;
+.brand-logo {
+  width: auto;
   height: 3rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: linear-gradient(135deg, #22a599, #123c39);
-  color: #031110;
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
+  object-fit: contain;
 }
 
 .brand-lockup strong,

@@ -1,3 +1,4 @@
+import noobLeagueLogo from '../../assets/noob-league-logo.png'
 import './home.css'
 import {
   ecosystemStats,
@@ -17,7 +18,7 @@ export function HomePage() {
         <div className="hero-noise" />
         <header className="topbar">
           <div className="brand-lockup">
-            <span className="brand-badge">NL</span>
+            <img src={noobLeagueLogo} alt="Noob League" className="brand-logo" />
             <div>
               <p className="eyebrow">Noob League</p>
               <strong>Competitive Platform</strong>
@@ -33,8 +34,8 @@ export function HomePage() {
           </nav>
 
           <div className="topbar-actions">
-            <a href="#tournaments" className="ghost-button">
-              Ver campeonatos
+            <a href="#torneios" className="ghost-button">
+              Ver torneios
             </a>
             <a href="#broadcast" className="primary-button">
               Assistir ao circuito
@@ -46,7 +47,7 @@ export function HomePage() {
           <div className="hero-copy">
             <p className="eyebrow">Sistema competitivo para torneios e transmissoes</p>
             <h1>
-              A arena da Noob League para campeonatos, ranking e broadcast ao vivo.
+              A arena da Noob League para torneios, ranking e broadcast ao vivo.
             </h1>
             <p className="hero-description">
               Organize torneios no estilo eSports com controle de equipes, participantes,
@@ -54,7 +55,7 @@ export function HomePage() {
             </p>
 
             <div className="hero-cta">
-              <a href="#tournaments" className="primary-button">
+              <a href="#torneios" className="primary-button">
                 Explorar calendario
               </a>
               <a href="#broadcast" className="secondary-button">
@@ -75,7 +76,7 @@ export function HomePage() {
           <aside className="hero-sidebar">
             <section className="sidebar-card">
               <div className="sidebar-heading">
-                <span>Upcoming tournaments</span>
+                <span>Upcoming torneios</span>
                 <strong>Mock data</strong>
               </div>
 
@@ -118,7 +119,7 @@ export function HomePage() {
             reais quando os endpoints estiverem integrados.
           </p>
           <p>
-            O admin podera criar campeonatos, cadastrar participantes, montar equipes e
+            O admin podera criar torneios, cadastrar participantes, montar equipes e
             alternar regras entre dupla eliminacao, chave simples ou fases de grupos com
             playoffs.
           </p>
@@ -146,10 +147,10 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="events-section" id="tournaments">
+      <section className="events-section" id="torneios">
         <div className="section-title">
           <p className="eyebrow dark">Upcoming events</p>
-          <h2>Campeonatos em destaque</h2>
+          <h2>Torneios em destaque</h2>
         </div>
 
         <div className="events-list">

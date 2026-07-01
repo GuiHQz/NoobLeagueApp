@@ -23,8 +23,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    linear-gradient(180deg, rgba(4, 7, 7, 0.98), rgba(8, 12, 12, 1) 24rem, #e7ecec 24rem, #e7ecec 100%);
+  background: #0a0d0d;
 }
 
 body,

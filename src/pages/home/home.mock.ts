@@ -1,6 +1,6 @@
 export const navigationItems = [
   'Circuito',
-  'Campeonatos',
+  'Torneios',
   'Rankings',
   'Estatisticas',
   'Noticias',

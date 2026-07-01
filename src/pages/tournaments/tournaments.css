@@ -101,6 +101,7 @@
 .tournament-meta dd {
   margin: 0;
   color: rgba(241, 251, 250, 0.86);
+  overflow-wrap: anywhere;
 }
 
 .tournament-card p {

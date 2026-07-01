@@ -1,15 +1,12 @@
 import { apiGet } from './api'
 
 export type Tournament = {
-  id?: number | string
+  id?: string
+  status?: number
+  statusDescription?: string
+  creationDate?: string
   name?: string
-  title?: string
-  description?: string
-  game?: string
-  format?: string
-  status?: string
-  startDate?: string
-  endDate?: string
+  eventDate?: string
 }
 
 export async function getAllTournaments() {

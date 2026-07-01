@@ -24,7 +24,14 @@
 }
 
 .app-brand {
-  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.app-brand__logo {
+  width: auto;
+  height: 2.75rem;
+  object-fit: contain;
 }
 
 .app-nav {
