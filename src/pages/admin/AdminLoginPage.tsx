@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react'
+import { useState, type SyntheticEvent } from 'react'
 import './admin.css'
 
 type AdminLoginPageProps = {
@@ -10,7 +10,7 @@ export function AdminLoginPage({ errorMessage, onLogin }: AdminLoginPageProps) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault()
     onLogin(username, password)
   }
