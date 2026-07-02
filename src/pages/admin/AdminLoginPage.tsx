@@ -14,6 +14,7 @@ export function AdminLoginPage({ errorMessage, onLogin }: AdminLoginPageProps) {
     event.preventDefault()
     onLogin(username, password)
   }
+  
 
   return (
     <main className="admin-page">
