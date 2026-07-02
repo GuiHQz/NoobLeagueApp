@@ -65,10 +65,6 @@ export function TournamentsPage() {
       <section className="tournaments-hero">
         <p className="tournaments-eyebrow">Teste de integracao</p>
         <h1>Torneios</h1>
-        <p className="tournaments-description">
-          Esta tela faz o GET em <code>/tournament-api/get-all</code> e lista o retorno de
-          forma simples para validar a conexao com a API.
-        </p>
       </section>
 
       <section className="tournaments-content">

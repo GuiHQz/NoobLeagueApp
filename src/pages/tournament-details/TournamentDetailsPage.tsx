@@ -82,10 +82,6 @@ export function TournamentDetailsPage() {
 
         <p className="tournament-details-eyebrow">Detalhe do torneio</p>
         <h1>{tournament?.name || 'Carregando torneio'}</h1>
-        <p className="tournament-details-description">
-          Esta tela faz o GET em <code>/user-tournaments-api/tournament/{id || ':id'}</code>{' '}
-          para buscar os dados do torneio e os usuarios vinculados a ele.
-        </p>
       </section>
 
       <section className="tournament-details-content">
@@ -137,12 +133,12 @@ export function TournamentDetailsPage() {
 
             <section className="tournament-details-card">
               <div className="tournament-details-card__header">
-                <span>Usuarios vinculados</span>
+                <span>Usuários vinculados</span>
                 <strong>{users.length} participante(s)</strong>
               </div>
 
               {users.length === 0 ? (
-                <p className="tournament-empty-users">Nenhum usuario retornado para este torneio.</p>
+                <p className="tournament-empty-users">Nenhum usuário retornado para este torneio.</p>
               ) : (
                 <div className="tournament-users-list">
                   {users.map((user, index) => (
